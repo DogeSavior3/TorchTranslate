@@ -1,0 +1,16 @@
+defaults:
+  - data: de_en
+  - decoding: beam_search
+  - evaluation: bleu
+  - _self_
+
+device: auto
+checkpoint: output/best_model.pt
+sentence: das ist ein beispiel .
+input_file: null
+output_file: null
+evaluate: false
+
+hydra:
+  run:
+    dir: output/inference/${now:%Y-%m-%d}/${now:%H-%M-%S}

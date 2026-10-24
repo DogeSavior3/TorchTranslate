@@ -1,0 +1,3 @@
+epochs: 10
+label_smoothing: 0.1
+grad_clip: 1.0

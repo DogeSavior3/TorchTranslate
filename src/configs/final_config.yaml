@@ -1,0 +1,18 @@
+defaults:
+  - transformer
+  - override optimizer: adamw
+  - override scheduler: cosine
+  - _self_
+
+model:
+  d_model: 256
+  nhead: 4
+  num_encoder_layers: 3
+  num_decoder_layers: 3
+  d_ff: 1024
+  dropout: 0.1
+
+trainer:
+  epochs: 20
+  label_smoothing: 0.1
+  grad_clip: 1.0

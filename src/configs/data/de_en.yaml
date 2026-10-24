@@ -1,0 +1,6 @@
+train_source: data/train.de-en.de
+train_target: data/train.de-en.en
+val_source: data/val.de-en.de
+val_target: data/val.de-en.en
+min_freq: 2
+batch_size: 32
