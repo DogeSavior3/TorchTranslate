@@ -1,0 +1,18 @@
+[project]
+name = "torchtranslate"
+version = "0.1.0"
+description = "German-to-English translation with a PyTorch Transformer"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "hydra-core",
+    "matplotlib",
+    "sacrebleu",
+    "torch",
+    "tqdm",
+]
+
+[dependency-groups]
+dev = [
+    "ruff",
+]
